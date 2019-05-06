@@ -2,6 +2,7 @@
 #include <cassert>
 #include <iostream>
 #include <iomanip>
+#include <iterator>
 #include <numeric>
 #include <vector>
 
