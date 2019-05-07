@@ -42,8 +42,12 @@ std::ostream& operator<<(std::ostream& os, const Distance& l)
 
 const Distance GetAverageDistance(const std::vector<Distance>& v)
 {
-  return std::accumulate(v.begin(),v.end(),Distance(Distance::Distance_type(0.0 * boost::units::si::meter)))
-    / static_cast<double>(v.size());
+  return std::accumulate(
+    v.begin(),
+    v.end(),
+    Distance(Distance::Distance_type(0.0 * boost::units::si::meter))
+  )
+  / static_cast<double>(v.size());
 }
 
 int main()
